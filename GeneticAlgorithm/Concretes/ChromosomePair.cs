@@ -21,7 +21,7 @@ namespace GeneticAlgorithm.Concretes
             Int32 lcp = RandomExtension.Instance.Next(chromoLen - 2); //left crossover point
             Int32 rcp = RandomExtension.Instance.Next(lcp, chromoLen - 1); //right crossover point         
 
-            Chromosome offspring12 = new Chromosome(Individual1, isShuffled: false);
+            Chromosome offspring1 = new Chromosome(Individual1, isShuffled: false);
             Chromosome offspring2 = new Chromosome(Individual2, isShuffled: false);
 
             #region DebugWriteLines
